@@ -18,3 +18,5 @@ X = np.random.rand(1000, 32)
 mrlt = gs.rlts(X, L_0=64, gamma=1.0/128, i_max=100, n=100)
 ```
 For more details see [examples](https://github.com/geom-score/geometry-score/blob/master/examples.ipynb).
+
+If you want to apply it to visual data you first have to reshape it into 2D array.
