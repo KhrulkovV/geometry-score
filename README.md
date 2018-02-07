@@ -1,6 +1,6 @@
 # Geometry Score: A Method For Evaluating Generative Adversarial Networks
 Python implementation of the algorithms from the paper.
-![manifolds](assets/manifolds.png)
+![manifolds](assets/manifolds.png =250x250)
 ## Prerequisites
 
 - Python 2.7 or Python 3.3+
