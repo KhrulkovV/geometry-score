@@ -17,4 +17,4 @@ import gs
 X = np.random.rand(1000, 32)
 mrlt = gs.rlts(X, L_0=64, gamma=1.0/128, i_max=100, n=100)
 ```
-For examples see [examples](https://github.com/geom-score/geometry-score/blob/master/examples.ipynb).
+For more details see [examples](https://github.com/geom-score/geometry-score/blob/master/examples.ipynb).
