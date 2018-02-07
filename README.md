@@ -14,8 +14,8 @@ Python implementation of the algorithms from the paper.
 ```python
 import numpy as np
 import gs
-X = np.random.rand(1000, 32)
-mrlt = gs.rlts(X, L_0=64, gamma=1.0/128, i_max=100, n=100)
+X = np.random.rand(1000, 2)
+mrlt = gs.rlts(X, L_0=32, gamma=1.0/8, i_max=100, n=100)
 ```
 For more details see [examples](https://github.com/geom-score/geometry-score/blob/master/examples.ipynb).
 
