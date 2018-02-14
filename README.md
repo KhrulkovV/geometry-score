@@ -18,6 +18,7 @@ X = np.random.rand(1000, 2)
 rlt = gs.rlts(X, L_0=32, gamma=1.0/8, i_max=100, n=100)
 mrlt = np.mean(rlt, axis=0)
 ```
-For more details see [examples](https://github.com/geom-score/geometry-score/blob/master/examples.ipynb).
+For more details see the [MNIST example](https://github.com/geom-score/geometry-score/blob/master/example-mnist.ipynb) and
+[toy examples](https://github.com/geom-score/geometry-score/blob/master/examples-basic.ipynb)
+.
 
-If you want to apply it to visual data you first have to reshape it into 2D array.
