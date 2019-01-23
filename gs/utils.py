@@ -1,6 +1,16 @@
+try:
+    import gudhi
+except ImportError as e:
+    import six
+    error = e.__class__(
+        "You are likely missing your GUDHI installation, "
+        "you should visit http://gudhi.gforge.inria.fr/python/latest/installation.html "
+        "for further instructions.\nIf you use conda, you can use\nconda install -c vincentrouvreau gudhi"
+    )
+    six.raise_from(error, e)
+
 import numpy as np
-from scipy.spatial.distance import cdist, pdist, squareform
-import gudhi
+from scipy.spatial.distance import cdist  # , pdist, squareform
 import matplotlib.pyplot as plt
 
 
@@ -111,7 +121,7 @@ def witness(X, gamma=1.0 / 128, L_0=64):
     wc = gudhi.WitnessComplex(lmrk_tab)
     alpha_max = max_dist * gamma
     st = wc.create_simplex_tree(max_alpha_square=alpha_max, limit_dimension=2)
-    big_diag = st.persistence(homology_coeff_field=2)
+    # big_diag = st.persistence(homology_coeff_field=2)
     diag = st.persistence_intervals_in_dimension(1)
     return diag, alpha_max
 
