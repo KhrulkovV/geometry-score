@@ -5,7 +5,7 @@ except ImportError as e:
     error = e.__class__(
         "You are likely missing your GUDHI installation, "
         "you should visit http://gudhi.gforge.inria.fr/python/latest/installation.html "
-        "for further instructions.\nIf you use conda, you can use\nconda install -c vincentrouvreau gudhi"
+        "for further instructions.\nIf you use conda, you can use\nconda install -c conda-forge gudhi"
     )
     six.raise_from(error, e)
 
